@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(228, 226, 226);
+}
+
+.flex-container-column {
+    display: flex;
+    /* properti pendukung */
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid white;
+    /* background: -webkit-linear-gradient(top, #d2d2d2, #ddd); */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.double {
+    /* flex-basis: 50%; */
+}
+
+.display {
+    color: black;
+    width: 100%;
+    padding: 10px 20px;
+    /* background-color: #333333; */
+    background-color: aquamarine;
+    border: 1px solid white;
+    font-size: 2em;
+}
+
+.operator,
+.negative,
+.equals {
+    background: orange;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+
+span {
+    position: absolute;
+    text-align: center;
+    margin-top: 2%;
+    right: 0;
+    left: 0;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+}
